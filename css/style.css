@@ -3,6 +3,11 @@
   padding: 0px;
   list-style: none; }
 
+.requestoffer__form input[type="button"] {
+  -webkit-box-shadow: 0px 9px 10px -9px #d6d6d6;
+  -moz-box-shadow: 0px 9px 10px -9px #d6d6d6;
+  box-shadow: 0px 9px 10px -9px #d6d6d6; }
+
 *, :before, :after {
   box-sizing: border-box; }
 
@@ -31,7 +36,7 @@ body {
   display: block; }
 
 .clear {
-  clear: clear; }
+  clear: both; }
 
 header {
   width: 100%;
@@ -57,15 +62,17 @@ header {
   width: calc(100% - 142px);
   display: block;
   min-height: 40px; }
+  .navbar__menu {
+    float: right; }
   .navbar__menu--item {
     float: left;
     display: inline-block; }
   .navbar__menu--item > a {
-    padding: 10px 14px;
+    padding: 10px 13px;
     color: #131313;
-    font-size: 12.3px;
+    font-size: 11.6px;
     text-transform: uppercase;
-    font-weight: 500; }
+    font-weight: 600; }
 
 .head-right {
   padding: 30px 0 05px;
@@ -124,12 +131,72 @@ header {
   width: 100%;
   min-height: 635px; }
 
+/*****requestoffer*********/
+.requestoffer {
+  width: 100%;
+  height: inherit;
+  padding: 195px 30px 100px;
+  position: relative;
+  min-height: 635px; }
+  .requestoffer__heading1 {
+    color: #2296f3;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0px 0 0px; }
+  .requestoffer__heading2 {
+    color: #0c1549;
+    font-weight: 600;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0px; }
+  .requestoffer__tagline {
+    color: #2296f3;
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0px 0 10px;
+    display: block; }
+  .requestoffer__tagline2 {
+    color: #131313;
+    font-weight: 300;
+    margin: 0px 0 10px;
+    text-shadow: 0.5px 0.5px 0px #a1a1a1; }
+  .requestoffer__form {
+    width: 100%;
+    display: block; }
+  .requestoffer__form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    background: #e7e7e7;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 0 10px 0; }
+  .requestoffer__form input[type="text"]::placeholder {
+    text-align: center;
+    color: #858585;
+    font-size: 16px; }
+  .requestoffer__form input[type="button"] {
+    background: #2296f3;
+    color: #fff;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px; }
+
 /* Screen < 1200px */
 @media screen and (max-width: 1200px) {
   .navbar {
     width: calc(100% - 20px); }
 
-  .navbar2 {
-    width: calc(100% - 20px); } }
+  .head-cnt {
+    width: 216px;
+    margin: 0px auto; }
+
+  .requestoffer {
+    padding: 5px 30px 10px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,10 @@
 $primary-color: #adadaf;
 $primary-font:'Hind', sans-serif;
 %liststyle  {margin: 0px;padding: 0px; list-style: none;}
-$clear :clear;
+%shadow-btm{ -webkit-box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);
+    -moz-box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);
+    box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);}
+$clear :both;
 $linkcolor:#131313;
 *,:before,:after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -33,11 +36,11 @@ min-height: 40px;
     
     &__menu{
         @extend %liststyle;
+        float: right;
     }
     
     &__menu--item{float: left; display: inline-block;}
-    &__menu--item > a{ padding: 10px 14px;   color: $linkcolor;font-size: 12.3px;text-transform: uppercase;
-        font-weight: 500;
+    &__menu--item > a{ padding: 10px 13px;   color: $linkcolor;font-size: 11.6px;text-transform: uppercase;font-weight: 600;
     }
 }
 
@@ -68,11 +71,34 @@ font-size: 12px;font-weight: 500; color: $linkcolor;margin-top: 6px; display: bl
 .main__banner_wrap{
     width: 100%; min-height: 635px
 }
-
+/*****requestoffer*********/
+.requestoffer{width: 100%; height:inherit; padding: 195px 30px 100px;  position: relative; min-height: 635px;
+    &__heading1{
+        color: #2296f3; font-weight: 600; font-size: 35px; text-transform: uppercase;margin:0px 0 0px;
+    }
+    &__heading2{
+        color: #0c1549; font-weight: 600; font-size: 35px; text-transform: uppercase;  margin:0px;
+    }
+    &__tagline{
+        color: #2296f3; font-weight:400; font-size: 24px; text-transform: uppercase;margin: 0px 0 10px; display: block;
+    }
+    &__tagline2{ color: #131313; font-weight:300; margin:0px 0 10px; text-shadow: 0.5px 0.5px 0px #a1a1a1 }
+    &__form{
+width: 100%; display: block;
+    }
+    &__form input[type="text"]{width: 100%; height: 40px; background: #e7e7e7; font-size: 14px; outline: none; border: none;
+    display: block; margin: 0 0 10px 0;
+    }
+    &__form input[type="text"]::placeholder{text-align: center;color: #858585;font-size: 16px}
+    &__form input[type="button"]{background: #2296f3; color: #fff; letter-spacing: 1px; height:40px;width: 100%;font-weight: 500;
+    font-size: 16px;
+    @extend %shadow-btm;
+    }
+}
 
 /* Screen < 1200px */
 @media screen and (max-width: 1200px) {
     .navbar{ width: calc(100% - 20px);}
-    
-    .navbar2{ width: calc(100% - 20px);}
+    .head-cnt{width: 216px; margin: 0px auto;}
+    .requestoffer{padding: 5px 30px 10px;}
 }
