@@ -4,6 +4,13 @@ $primary-font:'Hind', sans-serif;
 %shadow-btm{ -webkit-box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);
     -moz-box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);
     box-shadow: 0px 9px 10px -9px rgba(214,214,214,1);}
+%shadowbtm2{
+ -webkit-box-shadow: 0px 4px 13px 1px rgba(214,214,214,1);
+-moz-box-shadow: 0px 4px 13px 1px rgba(214,214,214,1);
+box-shadow: 0px 4px 13px 1px rgba(214,214,214,1);
+
+}
+%placeholder{color: #858585; font-weight: 400; font-size: 12.7px;}
 $clear :both;
 $linkcolor:#131313;
 *,:before,:after{box-sizing:border-box}
@@ -68,8 +75,9 @@ font-size: 12px;font-weight: 500; color: $linkcolor;margin-top: 6px; display: bl
     &__copyright{color: #fff; font-size: 14.5px;}
 }
 
-.main__banner_wrap{
-    width: 100%; min-height: 635px
+.main__banner{
+    width: 100%; min-height: 635px;
+    &__img{margin-bottom: 0px;    padding-bottom:0rem}
 }
 /*****requestoffer*********/
 .requestoffer{width: 100%; height:inherit; padding: 195px 30px 100px;  position: relative; min-height: 635px;
@@ -91,8 +99,74 @@ width: 100%; display: block;
     }
     &__form input[type="text"]::placeholder{text-align: center;color: #858585;font-size: 16px}
     &__form input[type="button"]{background: #2296f3; color: #fff; letter-spacing: 1px; height:40px;width: 100%;font-weight: 500;
-    font-size: 16px;
-    @extend %shadow-btm;
+    font-size: 16px;    border: none;
+    @extend %shadowbtm2;
+    }
+}
+.cities-list{
+    width: 100%; background: #f8f8f8; min-height: 65px;padding: 20px 0;
+@extend %shadowbtm2;
+/*-webkit-box-shadow: 0px 4px 1px 1px rgba(214,214,214,1);
+-moz-box-shadow: 0px 4px 1px 1px rgba(214,214,214,1);
+box-shadow: 0px 4px 1px 1px rgba(214,214,214,1);*/
+}
+.city__list{
+    @extend %liststyle;
+    &--padd{
+padding: 0 5px;
+    }
+    &item{float: left; display: inline-block;margin: 0px;}
+    &item a{color: #adadaf; font-size: 15px; padding: 0 15px; text-transform: uppercase; font-weight: 500;}
+}
+.secondwrapper{
+    width: 100%; min-height: 900px; position: relative; display: block;
+}
+
+.propertyform{ margin: 0px auto; display: block; padding: 40px 0;
+    &__heading{background: #0c1549; padding:12px 20px; color: #fff;}
+    &__heading--first{
+        font-size: 30px; font-weight: 600; margin: 0 0 2px 0;
+    }
+    &__heading--second{
+        font-size: 22px; font-weight: 400;
+    }
+    &__wrap{
+        padding:40px 44px 10px; background: #fff;  
+        @extend %shadowbtm2;
+    }
+    
+    &__field-wrapper{margin-bottom: 10px;width: 100%; display: block;}
+    &__field-wrapper label{font-weight:400; color: #131313;text-shadow: 0.2px 0.2px;}
+    &__field-wrapper input[type="number"],&__field-wrapper input[type="text"],&__field-wrapper input[type="email"],&__field-wrapper input[type="tel"],&__fields{border:none; border-radius: 0px; background: #e7e7e7;}
+    &__field-wrapper input[type="number"]::placeholder,&__field-wrapper input[type="text"]::placeholder,&__field-wrapper input[type="email"]::placeholder,&__field-wrapper input[type="tel"]::placeholder{
+        @extend %placeholder;
+    }
+    &__fields--btn{width: 100%;text-transform: uppercase; font-weight: 600;height: 40px;background: #2296f3; color: #fff;font-size: 18px;
+    -webkit-box-shadow: 0px 3px 8px 1px rgba(214,214,214,1);
+-moz-box-shadow: 0px 3px 8px 1px rgba(214,214,214,1);
+box-shadow: 0px 3px 8px 1px rgba(214,214,214,1);
+    }
+    &__fields--btn:hover{color: #fff;}
+    &__wrap--btm{width: 100%; min-height: 50px; position: relative; line-height: 29px; padding:20px 0 15px;}
+    &__wrap--btm span{font-size: 28px;  display: block;color: $linkcolor;font-weight:400;}
+    &__wrap--btm a{color: #2296f3; font-size: 25px;font-weight: 600;}
+}
+
+.secondwrapbox{
+    &__box1{min-height: 330px;background: #2296f3;padding:60px 65px; color: #fff;
+    h4{
+        font-size: 35px; font-weight: 600; margin-bottom: 10px;
+    }
+    i,p {font-size: 22px; font-style: italic; font-weight: 300; display: block; padding: 10px 0;font-family: 'Lato';margin-bottom: 5px;}
+    small{font-size: 15px;}
+    }
+    &__box2{background: #0c1549;padding: 40px 40px; color: #fff; font-size: 24px;    line-height: 28.5px;
+        &__tagline--one{font-weight: 700;font-size: inherit;}
+        &__tagline--two{font-weight: 500;font-size: inherit;}
+    }
+    &__box3{background: #2296f3;padding: 40px 40px; color: #fff;font-size: 24px; line-height: 28.5px;
+        &__tagline--one{font-weight: 700;font-size: inherit;}
+        &__tagline--two{font-weight: 500;font-size: inherit;}
     }
 }
 

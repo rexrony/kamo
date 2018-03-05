@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:300,400" rel="stylesheet">
    
     <link rel="stylesheet" href="css/bemskel.min.css">
+    <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Landing Page 1</title>
 </head>
@@ -33,18 +34,18 @@
     </div> 
 </div>
 <div class="col col--3 head-right u-pull--right">
-   <ul class="head-cnt">
-       <li class="head-cnt__phone"><a href="tel:1-844-388-4539">1-844-388-4539    </a></li>
-       <li class="head-cnt__requestoffer"><a href="#_">REQUEST OFFER</a></li>
-   </ul>
-</div>
+<ul class="head-cnt">
+           <li class="head-cnt__phone"><a href="tel:1-844-388-4539">1-844-388-4539    </a></li>
+           <li class="head-cnt__requestoffer"><a href="#_">REQUEST OFFER</a></li>
+          </ul>
+    </div>
         </div><!--.row-->
     </div><!--.container-->
            </header>
     <div class="clear"></div>
-    <div class="main__banner_wrap">
+    <div class="main__banner">
 <div class="col col--8">
-    <figure><img src="images/main-img.png" alt=""></figure>
+    <figure class="main__banner__img"><img src="images/main-img.png" alt=""></figure>
 </div>
 <div class="col col--4">
     <section class="requestoffer"> 
@@ -55,12 +56,111 @@
             <p class="requestoffer__tagline2">Tell us about the home you’re selling and we’ll send you a competitive purchase offer.</p>
             <form class="requestoffer__form" action="#">
                 <input type="text" placeholder="Enter property address" />
-                <input type="button" value="REQUEST OFFER"  />
+                <input class="hvr-float-shadow" type="button" value="REQUEST OFFER"  />
             </form>
     </center>
 </section>
 </div>
     </div> 
+    <div class="clear"></div>
+    <div class="cities-list">
+    <div class="container">
+      <div class="row">
+        <ul class="city__list city__list--padd">
+            <li class="city__listitem"><a href="#">Phoenix, AZ </a></li>
+            <li class="city__listitem"><a href="#">Los Angeles, CA</a></li>
+            <li class="city__listitem"><a href="#">Tampa &amp; Orlando, FL </a></li>
+            <li class="city__listitem"><a href="#">Atlanta, GA</a></li>
+            <li class="city__listitem"><a href="#">Las Vegas,NV</a></li>
+            <li class="city__listitem"><a href="#">Charlotte,NC</a></li>
+            <li class="city__listitem"><a href="#">Salt Lake City, UT</a></li>
+        </ul>
+      </div><!--.row-->
+      </div><!--.container-->
+  </div>
+   <div class="clear"></div>
+   <div class="secondwrapper">
+       <div class="col col--6">
+           <section class="propertyform col--9">
+              <div class="propertyform__heading">
+<center>
+    <h3 class="propertyform__heading--first">Sell Your House Now</h3>
+    <span class="propertyform__heading--second">Please Submit Your Property Info Below</span>
+</center>
+              </div>   
+              <div class="clear"></div>   
+              <div class="propertyform__wrap">
+                  <form action="#">
+                  <div class="propertyform__field-wrapper u-full-width">
+                  <label for="Name">Name</label>
+                   <input class="u-full-width propertyform__fields" type="text" placeholder="Enter Your Full Name" />
+                  </div>
+                 <div class="propertyform__field-wrapper u-full-width">
+                  <label for="Email">Email</label>
+                   <input class="u-full-width propertyform__fields" type="email" placeholder="Enter Your Email Address" />
+                  </div>
+                 <div class="propertyform__field-wrapper u-full-width">
+                 <div class="row">
+                     <div class="col col--6"><label for="contact">Contact</label>
+                   <input class="u-full-width" type="tel" placeholder="Enter Your Contact Number" ></div>
+                     <div class="col col--6"><label for="zip code">ZIP Code</label>
+                   <input class="u-full-width propertyform__fields" type="text" placeholder="Enter Your Property ZIP Code"></div>
+                 </div>
+                  
+                  </div>
+                  <div class="propertyform__field-wrapper u-full-width">
+                  <label for="Email">Email</label>
+                   <input class="u-full-width propertyform__fields" type="email" placeholder="Enter Your Email Address" />
+                  </div>
+                  <div class="propertyform__field-wrapper u-full-width">
+                 <div class="row">
+                     <div class="col col--6"><label for="contact">Number Of Beds</label>
+                   <input class="u-full-width" type="number" placeholder="Select Numer Of Beds" ></div>
+                     <div class="col col--6"><label for="baths">Number Of Baths</label>
+                   <input class="u-full-width propertyform__fields" type="number" placeholder="Select Numer Of Baths"></div>
+                 </div>
+                  
+                  </div>
+                  <div class="propertyform__field-wrapper u-full-width">
+                   <input class="u-full-width propertyform__fields--btn" type="submit" value="SUBMIT INFO & REQUEST OFFER" />
+                  </div>
+                  </form>
+               </div>   
+               <div class="propertyform__wrap--btm">
+                     <center>
+                         <span>Or Give Us A Call Now At:</span>
+<a href="tel:555-555-5555">555-555-5555</a>
+                     </center> 
+                  </div> 
+           </section>
+           
+       </div>
+       <div class="col col--6 secondwrapbox">
+           <div class="u-full-width secondwrapbox__box1">
+               <center>
+                   <h4>OfferPad is a Direct Home Buyer</h4>
+                   <p><i>" We buy quality homes at competitive prices and deliver homeowners the ultimate home selling experience. "</i>
+                   </p>
+                   <small>Brian Bair, Co-Founder and CEO</small>
+               </center>
+           </div>
+           <div class="clear"></div>
+           <div class="u-full-width secondwrapbox__box2">
+               <center>
+                   
+<p class="secondwrapbox__box2__tagline--one">Traditional <br> Real Estate</p>
+<p class="secondwrapbox__box2__tagline--two">Typically a lengthy, uncertain <br> and inconvenient experience</p>
+               </center>
+           </div>
+           <div class="clear"></div>
+           <div class="u-full-width secondwrapbox__box3">
+               <center>
+<p class="secondwrapbox__box2__tagline--one">House<br> Flippers</p>
+<p class="secondwrapbox__box2__tagline--two">Typically a low service,<br> the lowest value price</p>
+               </center>
+           </div>
+       </div>
+   </div>
     <div class="clear"></div>
     <footer class="footer">
         <div class="footer__top">
