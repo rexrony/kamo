@@ -119,7 +119,7 @@ padding: 0 5px;
     &item a{color: #adadaf; font-size: 15px; padding: 0 15px; text-transform: uppercase; font-weight: 500;}
 }
 .secondwrapper{
-    width: 100%; min-height: 900px; position: relative; display: block;
+    width: 100%; min-height: 900px; position: relative; display: block;margin-bottom: 15px;
 }
 
 .propertyform{ margin: 0px auto; display: block; padding: 40px 0;
@@ -169,10 +169,65 @@ box-shadow: 0px 3px 8px 1px rgba(214,214,214,1);
         &__tagline--two{font-weight: 500;font-size: inherit;}
     }
 }
+.third_wrap{width: 100%; min-height:740px; position: relative;    display: inline-block;margin-bottom: 15px;
+&__left{height: inherit; min-height:604px; 
+background: url(../images/btm-img-lft.png) no-repeat;
+background-size:100% 100%;width: 50%;position: relative;
+
+&--text{background: rgba(34,150,243,0.8); display: block; position: relative; bottom:-468px;min-height: 250px; 
+padding:33px 100px; color: #fff;width: 100%;z-index: 1;
+ h2{font-size: 50px; text-transform: uppercase; font-weight: 700;line-height: 1.0; text-transform: uppercase;
+  span{
+      font-size: 36px; display: block; font-weight:500;
+  }
+ }
+ &content{font-size: 26px; line-height: 1.6; padding: 10px 0 0 0;display: block;}
+}
+
+}
+&__right{
+    height: inherit;min-height: 604px; position: relative;
+    margin-left: 0px;width: 50%;
+
+    background: url(../images/btm-img-rht.png) no-repeat;
+background-size: 100% 100%;
+
+&--text{background: rgba(12,21,73,0.8); display: block; position:relative; bottom: -468px; min-height: 250px; 
+    padding:33px 100px; color: #fff;width: 100%;z-index: 1;
+     h2{font-size: 50px; text-transform: uppercase; font-weight: 700;line-height: 1.0;text-transform: uppercase;
+      span{
+          font-size: 36px; display: block; font-weight:500;
+      }
+     }
+     &content{font-size: 26px; line-height: 1.6; padding: 10px 0 0 0;display: block;}
+    }
+
+}
+
+}
+/********/
+.request-btn{background: #2296f3;
+    color: #fff;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;}
 
 /* Screen < 1200px */
 @media screen and (max-width: 1200px) {
     .navbar{ width: calc(100% - 20px);}
+    .propertyform__fields--btn{    font-size: 14px;}
     .head-cnt{width: 216px; margin: 0px auto;}
-    .requestoffer{padding: 5px 30px 10px;}
+    .requestoffer{padding: 5px 30px 10px;min-height: 300px;}
+    .third_wrap{
+        &__left{width: 100%;background-size: 100%;
+            &--text{ padding: 15px; bottom: -334px;}
+        }
+        &__right{background-size: 100%;    
+            margin-left: 0px;width: 100%;
+            &--text{ padding: 15px;bottom: -334px;}
+        }
+    }
 }

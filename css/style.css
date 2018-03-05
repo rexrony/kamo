@@ -222,7 +222,8 @@ header {
   width: 100%;
   min-height: 900px;
   position: relative;
-  display: block; }
+  display: block;
+  margin-bottom: 15px; }
 
 .propertyform {
   margin: 0px auto;
@@ -327,16 +328,117 @@ header {
     font-weight: 500;
     font-size: inherit; }
 
+.third_wrap {
+  width: 100%;
+  min-height: 740px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px; }
+  .third_wrap__left {
+    height: inherit;
+    min-height: 604px;
+    background: url(../images/btm-img-lft.png) no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    position: relative; }
+    .third_wrap__left--text {
+      background: rgba(34, 150, 243, 0.8);
+      display: block;
+      position: relative;
+      bottom: -468px;
+      min-height: 250px;
+      padding: 33px 100px;
+      color: #fff;
+      width: 100%;
+      z-index: 1; }
+      .third_wrap__left--text h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.0;
+        text-transform: uppercase; }
+        .third_wrap__left--text h2 span {
+          font-size: 36px;
+          display: block;
+          font-weight: 500; }
+      .third_wrap__left--textcontent {
+        font-size: 26px;
+        line-height: 1.6;
+        padding: 10px 0 0 0;
+        display: block; }
+  .third_wrap__right {
+    height: inherit;
+    min-height: 604px;
+    position: relative;
+    margin-left: 0px;
+    width: 50%;
+    background: url(../images/btm-img-rht.png) no-repeat;
+    background-size: 100% 100%; }
+    .third_wrap__right--text {
+      background: rgba(12, 21, 73, 0.8);
+      display: block;
+      position: relative;
+      bottom: -468px;
+      min-height: 250px;
+      padding: 33px 100px;
+      color: #fff;
+      width: 100%;
+      z-index: 1; }
+      .third_wrap__right--text h2 {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.0;
+        text-transform: uppercase; }
+        .third_wrap__right--text h2 span {
+          font-size: 36px;
+          display: block;
+          font-weight: 500; }
+      .third_wrap__right--textcontent {
+        font-size: 26px;
+        line-height: 1.6;
+        padding: 10px 0 0 0;
+        display: block; }
+
+/********/
+.request-btn {
+  background: #2296f3;
+  color: #fff;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  border: none; }
+
 /* Screen < 1200px */
 @media screen and (max-width: 1200px) {
   .navbar {
     width: calc(100% - 20px); }
+
+  .propertyform__fields--btn {
+    font-size: 14px; }
 
   .head-cnt {
     width: 216px;
     margin: 0px auto; }
 
   .requestoffer {
-    padding: 5px 30px 10px; } }
+    padding: 5px 30px 10px;
+    min-height: 300px; }
+
+  .third_wrap__left {
+    width: 100%;
+    background-size: 100%; }
+    .third_wrap__left--text {
+      padding: 15px;
+      bottom: -334px; }
+  .third_wrap__right {
+    background-size: 100%;
+    margin-left: 0px;
+    width: 100%; }
+    .third_wrap__right--text {
+      padding: 15px;
+      bottom: -334px; } }
 
 /*# sourceMappingURL=style.css.map */
