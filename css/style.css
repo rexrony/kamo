@@ -220,7 +220,7 @@ header {
 
 .secondwrapper {
   width: 100%;
-  min-height: 900px;
+  min-height: 850px;
   position: relative;
   display: block;
   margin-bottom: 15px; }
@@ -347,7 +347,7 @@ header {
       position: relative;
       bottom: -468px;
       min-height: 250px;
-      padding: 33px 100px;
+      padding: 33px 127px;
       color: #fff;
       width: 100%;
       z-index: 1; }
@@ -362,7 +362,7 @@ header {
           display: block;
           font-weight: 500; }
       .third_wrap__left--textcontent {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.6;
         padding: 10px 0 0 0;
         display: block; }
@@ -380,7 +380,7 @@ header {
       position: relative;
       bottom: -468px;
       min-height: 250px;
-      padding: 33px 100px;
+      padding: 33px 127px 33px 100px;
       color: #fff;
       width: 100%;
       z-index: 1; }
@@ -395,20 +395,70 @@ header {
           display: block;
           font-weight: 500; }
       .third_wrap__right--textcontent {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.6;
         padding: 10px 0 0 0;
         display: block; }
 
-/********/
+/****fouth_wrap****/
+.fouth_wrap {
+  width: 100%;
+  min-height: 500px;
+  margin: 15px 0 15px; }
+  .fouth_wrap__youtube {
+    width: 80%;
+    position: relative;
+    min-height: 295px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0px auto; }
+    .fouth_wrap__youtube iframe {
+      width: 100%;
+      height: 295px; }
+    .fouth_wrap__youtube--text {
+      color: #131313;
+      font-size: 18.2px;
+      padding: 9px 80px;
+      display: block;
+      line-height: 19px;
+      text-shadow: 0.1px 0.1px; }
+  .fouth_wrap__heading {
+    text-align: center;
+    margin: 0 0 15px;
+    position: relative;
+    color: #2296f3;
+    font-size: 36px;
+    font-weight: 600; }
+  .fouth_wrap__span {
+    font-size: 28.5px;
+    color: #0c1549;
+    padding: 10px 5px;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    line-height: 36px; }
+  .fouth_wrap__content {
+    color: #131313;
+    line-height: 34px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 0px; }
+
 .request-btn {
   background: #2296f3;
   color: #fff;
+  text-align: center;
+  text-transform: uppercase;
   letter-spacing: 1px;
+  margin: 10px auto;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 40px;
   height: 40px;
-  width: 100%;
+  width: 383px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   border: none; }
 
 /* Screen < 1200px */
